@@ -33,6 +33,7 @@ def unauthorized() -> None:
       - Unauthorized error.
     """
     abort(401)
+
     
 @app_views.route('/Forbidden/', strict_slashes=False)
 def Forbidden() -> None:
@@ -41,5 +42,3 @@ def Forbidden() -> None:
       - Forbidden error.
     """
     abort(403)
-    
-
